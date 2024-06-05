@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.28.1" theme-name="Stellar" theme-version="1.28.1">
-  <meta name="robots" content="noindex,follow">
+  
   <meta name="generator" content="Hexo 7.2.0">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin><link rel="preconnect" href="https://unpkg.com" crossorigin><link rel="preconnect" href="https://cdn.bootcdn.net" crossorigin>
@@ -17,29 +17,30 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fafb">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   
-  <title>归档 - 小石头的博客</title>
+  <title>Windows10 docker安装PHP环境swoole扩展 - 小石头的博客</title>
 
   
-    <meta name="description" content="小石头的博客 - 〆人们总把照进黑暗中的那束光叫做救赎。。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="http://tius.cn/archives/2018/index.html">
+    <meta name="description" content="概述本教程安装版本 php7.4  swoole4.6.4 步骤：1.安装php镜像2.创建php容器3.安装gcc g++编译环境4.安装swoole扩展5.配置php.ini6.重启容器 docker 安装PHP12# 首先docker下载php7.4的镜像docker pull php:7.4 创建容器123456789101112# 创建php7.4的容器docker run -it --">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows10 docker安装PHP环境swoole扩展">
+<meta property="og:url" content="http://tius.cn/2021/06/25/Windows10%20docker%E5%AE%89%E8%A3%85PHP%E7%8E%AF%E5%A2%83swoole%E6%89%A9%E5%B1%95/index.html">
 <meta property="og:site_name" content="小石头的博客">
-<meta property="og:description" content="小石头的博客 - 〆人们总把照进黑暗中的那束光叫做救赎。。">
+<meta property="og:description" content="概述本教程安装版本 php7.4  swoole4.6.4 步骤：1.安装php镜像2.创建php容器3.安装gcc g++编译环境4.安装swoole扩展5.配置php.ini6.重启容器 docker 安装PHP12# 首先docker下载php7.4的镜像docker pull php:7.4 创建容器123456789101112# 创建php7.4的容器docker run -it --">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://tius.cn/assets/images/20210707113406194.png">
+<meta property="article:published_time" content="2021-06-25T04:00:25.000Z">
+<meta property="article:modified_time" content="2024-06-05T11:59:12.215Z">
 <meta property="article:author" content="Tius">
-<meta property="article:tag" content="小石头">
-<meta property="article:tag" content="Tiusx">
-<meta property="article:tag" content="www.tius.cn">
-<meta property="article:tag" content="Tius">
-<meta property="article:tag" content="小石头的博客">
-<meta property="article:tag" content="Tius的博客">
-<meta property="article:tag" content="个人博客">
+<meta property="article:tag" content="PHP">
+<meta property="article:tag" content="windows 10">
+<meta property="article:tag" content="docker">
+<meta property="article:tag" content="swoole">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://tius.cn/assets/images/20210707113406194.png">
   
   
   
-  <meta name="keywords" content="小石头,Tiusx,www.tius.cn,Tius,小石头的博客,Tius的博客,个人博客">
+  <meta name="keywords" content="PHP,windows 10,docker,swoole">
 
   <!-- feed -->
   
@@ -58,7 +59,7 @@
 </head>
 <body>
 
-<div class="l_body s:aa index tech" id="start" layout="undefined" ><aside class="l_left"><div class="leftbar-container">
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/more/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/assets/images/avatar.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">小石头的博客</div><div class="sub normal cap">凡是过往，皆为序章。</div><div class="sub hover cap" style="opacity:0"> 照进黑暗中的那束光为救赎。</div></a></div></header>
@@ -75,16 +76,86 @@
 <footer class="footer dis-select"><div class="social-wrap"><a class="social" href="mailto:admin@tius.cn" rel="noopener noreferrer">email</a><a class="social" href="https://github.com/tiusx" target="_blank" rel="external nofollow noopener noreferrer">github</a><a class="social" href="/sitemap.xml" rel="noopener noreferrer">sitemap</a><a class="social" href="/feed.xml" rel="noopener noreferrer">rss</a></div></footer>
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/more/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/assets/images/avatar.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">小石头的博客</div><div class="sub normal cap">凡是过往，皆为序章。</div><div class="sub hover cap" style="opacity:0"> 照进黑暗中的那束光为救赎。</div></a></div></header>
-
- 
 
 
-<div class="navbar top"><nav class="post"><a href="/">近期发布</a><a href="/tags">标签</a><a class="active" href="/archives">归档</a></nav></div><div class="post-list archives"><article class="" id="archive"><div class='archive-header h4'>2021</div><div class="archive-list"><a class='post fs14' href="/2021/06/25/PHP%20SPL%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84SplFixedArray%E4%B8%8EArray%E5%AF%B9%E6%AF%94/"><time>06-25</time><span>PHP SPL数据结构SplFixedArray与Array对比</span></a></div><div class="archive-list"><a class='post fs14' href="/2021/06/25/Windows10%20docker%E5%AE%89%E8%A3%85PHP%E7%8E%AF%E5%A2%83swoole%E6%89%A9%E5%B1%95/"><time>06-25</time><span>Windows10 docker安装PHP环境swoole扩展</span></a></div><div class="archive-list"><a class='post fs14' href="/2021/04/07/PHP%20Yaf(Yet%20Another%20Framework)%20%E6%89%A9%E5%B1%95%E5%8F%8A%E6%A1%86%E6%9E%B6%E9%83%A8%E7%BD%B2/"><time>04-07</time><span>PHP Yaf(Yet Another Framework) 扩展及框架部署</span></a></div></article><article class="" id="archive"><div class='archive-header h4'>2018</div><div class="archive-list"><a class='post fs14' href="/2018/04/11/Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%9D%E5%A7%8B%E5%8C%96%E8%AE%BE%E7%BD%AE%E7%94%A8%E6%88%B7%E5%92%8Cssh%E5%85%AC%E7%A7%81%E9%92%A5%E7%99%BB%E9%99%86/"><time>04-11</time><span>Linux服务器初始化设置用户和ssh公私钥登陆</span></a></div></article></div>
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2021-06-25T04:00:25.000Z">2021-06-25</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-06-05T11:59:12.215Z">2024-06-05</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>Windows10 docker安装PHP环境swoole扩展</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>本教程安装版本 <code>php7.4</code>  <code>swoole4.6.4 </code><br>步骤：<br>1.安装<code>php</code>镜像<br>2.创建<code>php</code>容器<br>3.安装<code>gcc</code> <code>g++</code>编译环境<br>4.安装<code>swoole</code>扩展<br>5.配置<code>php.ini</code><br>6.重启容器</p>
+<h3 id="docker-安装PHP"><a href="#docker-安装PHP" class="headerlink" title="docker 安装PHP"></a>docker 安装PHP</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">首先docker下载php7.4的镜像</span></span><br><span class="line">docker pull php:7.4</span><br></pre></td></tr></table></figure>
+<h3 id="创建容器"><a href="#创建容器" class="headerlink" title="创建容器"></a>创建容器</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">创建php7.4的容器</span></span><br><span class="line">docker run -it --name TiusPHP7.4 php:7.4 bash</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">进入容器后，可以php-v查看当前版本</span></span><br><span class="line">php -v</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">PHP 7.4.21 (cli) (built: Jul  1 2021 19:23:47) ( NTS )</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Copyright (c) The PHP Group</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Zend Engine v3.4.0, Copyright (c) Zend Technologies</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">查看是否已安装swoole扩展</span></span><br><span class="line">php -m </span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">[PHP Modules]</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">...  扩展列表</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">[Zend Modules]</span></span><br></pre></td></tr></table></figure>
+<h3 id="安装Swoole扩展"><a href="#安装Swoole扩展" class="headerlink" title="安装Swoole扩展"></a>安装Swoole扩展</h3><p>进入容器后，查看对应版本及扩展后，我们可以看到并没有安装<code>swoole</code><br>现在安装<code>swoole</code>的扩展</p>
+<h4 id="更新镜像源"><a href="#更新镜像源" class="headerlink" title="更新镜像源"></a>更新镜像源</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-update ## 等待更新完成</span><br></pre></td></tr></table></figure>
+<h4 id="安装必要的编译环境gcc-g"><a href="#安装必要的编译环境gcc-g" class="headerlink" title="安装必要的编译环境gcc g++"></a>安装必要的编译环境gcc g++</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install -y gcc g++ autoconf libtool make</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用pecl安装swoole扩展"><a href="#使用pecl安装swoole扩展" class="headerlink" title="使用pecl安装swoole扩展"></a>使用pecl安装swoole扩展</h4><p>如果报错找不到curl<br>根据报错提示使用<code>apt-get install libcurl4-openssl-dev</code>安装后<br>再使用<code>pecl install swoole</code>安装<code>swoole</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pecl install swoole</span><br></pre></td></tr></table></figure>
+<h3 id="修改配置php-ini"><a href="#修改配置php-ini" class="headerlink" title="修改配置php.ini"></a>修改配置php.ini</h3><p>使用<code>php --ini </code>找到<code>php.ini</code>配置文件<br>写入扩展<code>extension=swoole</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">extension=swoole</span><br></pre></td></tr></table></figure>
+<h5 id="没有php-ini则修改docker-php-ext-sodium-ini"><a href="#没有php-ini则修改docker-php-ext-sodium-ini" class="headerlink" title="没有php.ini则修改docker-php-ext-sodium.ini"></a>没有php.ini则修改docker-php-ext-sodium.ini</h5><p>使用<code>php --ini</code> 或者 使用<code>whereis</code>查看<code>php</code>安装目录</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">php --ini</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"> # </span><span class="language-bash">配置文件（php.ini）路径</span></span><br><span class="line"> Configuration File (php.ini) Path: /usr/local/etc/php</span><br><span class="line"><span class="meta prompt_"> # </span><span class="language-bash">已加载配置文件</span></span><br><span class="line"> Loaded Configuration File:         (none)</span><br><span class="line"><span class="meta prompt_"> # </span><span class="language-bash">扫描PHP conf.d 下的其他ini 文件</span></span><br><span class="line"> Scan for additional .ini files in: /usr/local/etc/php/conf.d</span><br><span class="line"><span class="meta prompt_"> # </span><span class="language-bash">解析的其他.ini文件</span></span><br><span class="line"> Additional .ini files parsed:      `/usr/local/etc/php/conf.d/docker-php-ext-sodium.ini`</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">whereis php</span><br><span class="line"></span><br><span class="line">php: </span><br><span class="line">/usr/local/bin/php </span><br><span class="line">/usr/local/etc/php </span><br><span class="line">/usr/local/lib/php </span><br><span class="line">/usr/local/php </span><br><span class="line">/usr/src/php/php.ini-development </span><br><span class="line">/usr/src/php/php.ini-production</span><br></pre></td></tr></table></figure>
+
+<p>默认情况下是在<code>/usr/local/etc/php/conf.d/</code>目录下<br><code>/usr/local/etc/php/conf.d/docker-php-ext-sodium.ini</code><br>写入<code>extension=swoole</code><br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/assets/images/20210707113406194.png" alt="docker，php,写入swoole扩展"></p>
+<h3 id="重启容器"><a href="#重启容器" class="headerlink" title="重启容器"></a>重启容器</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">重启容器</span></span><br><span class="line">docker restart TiusPHP7.4</span><br></pre></td></tr></table></figure>
+<h3 id="检查swoole扩展"><a href="#检查swoole扩展" class="headerlink" title="检查swoole扩展"></a>检查swoole扩展</h3><p>检查<code>swoole</code>是否安装成功</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">进入容器</span></span><br><span class="line">docker exec -it TiusPHP7.4 bash</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">检查扩展</span></span><br><span class="line">php -m</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">[PHP Modules]</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">...  扩展列表</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">swoole</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">...</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">[Zend Modules]</span></span><br></pre></td></tr></table></figure>
+
+
+
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">署名-非商业性使用-禁止演绎 4.0 国际</a> 许可协议，未经授权请勿转载。</p>
+</div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2021/06/25/PHP%20SPL%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84SplFixedArray%E4%B8%8EArray%E5%AF%B9%E6%AF%94/">PHP SPL数据结构SplFixedArray与Array对比</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2021/04/07/PHP%20Yaf(Yet%20Another%20Framework)%20%E6%89%A9%E5%B1%95%E5%8F%8A%E6%A1%86%E6%9E%B6%E9%83%A8%E7%BD%B2/">PHP Yaf(Yet Another Framework) 扩展及框架部署</a></div></section></div>
+
+
+
+
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      <p>快来参与讨论吧~</p>
+
+    </section>
+    <section class='body cmt-body giscus'>
+      
+
+<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="giscus" src="https://giscus.app/client.js" data-repo="tiusx/tiusx.github.io" data-repo-id="R_kgDOMDOAZA" data-category="Announcements" data-category-id="DIC_kwDOMDOAZM4Cf0XK" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="zh-CN" crossorigin="anonymous"></div>
+
+    </section>
+  </div>
+
+
+
 <footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/">近期发布</a><a href="/categories/">文章分类</a><a href="/tags/">文章标签</a><a href="/archives/">文章归档</a></div><div class="sitemap-group"><span class="fs15">维基</span><a href="/wiki/">所有维基</a><a href="/wiki/self-hosting/">Self-Hosting</a><a href="/wiki/windows-server/">Windows Server</a><a href="/wiki/sql-server/">SQL Server</a></div><div class="sitemap-group"><span class="fs15">动态</span><a href="/news/cat/">🐱</a><a href="/news/">2024</a><a href="/news/2023/">2023</a><a href="/news/2022/">2022</a></div><div class="sitemap-group"><span class="fs15">更多</span><a href="/more/">我的订阅</a><a href="/more/music/">我的歌单</a><a href="/more/about/">关于本站</a><a href="/more/me/">关于博主</a></div></div><div class="text"><p>本站使用 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo">Hexo</a> 框架和 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建，代码托管于 <a target="_blank" rel="noopener" href="https://github.com/parasolwaddledee/blog">GitHub</a>，站点部署于 <a target="_blank" rel="noopener" href="https://blog-parasolwaddledee.vercel.app/">Vercel</a>。<br>本站所有内容均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">署名-非商业性使用-禁止演绎 4.0 国际</a> 许可协议，未经授权请勿转载。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel blur'>
+<div class="widgets">
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-text">概述</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-%E5%AE%89%E8%A3%85PHP"><span class="toc-text">docker 安装PHP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8"><span class="toc-text">创建容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Swoole%E6%89%A9%E5%B1%95"><span class="toc-text">安装Swoole扩展</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E9%95%9C%E5%83%8F%E6%BA%90"><span class="toc-text">更新镜像源</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%BF%85%E8%A6%81%E7%9A%84%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83gcc-g"><span class="toc-text">安装必要的编译环境gcc g++</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8pecl%E5%AE%89%E8%A3%85swoole%E6%89%A9%E5%B1%95"><span class="toc-text">使用pecl安装swoole扩展</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AEphp-ini"><span class="toc-text">修改配置php.ini</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B2%A1%E6%9C%89php-ini%E5%88%99%E4%BF%AE%E6%94%B9docker-php-ext-sodium-ini"><span class="toc-text">没有php.ini则修改docker-php-ext-sodium.ini</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%90%AF%E5%AE%B9%E5%99%A8"><span class="toc-text">重启容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5swoole%E6%89%A9%E5%B1%95"><span class="toc-text">检查swoole扩展</span></a></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
@@ -314,6 +385,30 @@
 <script src="/js/main.js?v=1.28.1" async></script>
 
 <!-- optional -->
+
+  <script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const els = document.querySelectorAll("#comments #giscus");
+    if (els.length === 0) return;
+    els.forEach((el, i) => {
+      try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.error(error);
+      }
+      var script = document.createElement('script');
+      script.async = true;
+      for (let key of Object.keys(el.attributes)) {
+        let attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
+    });
+  });
+</script>
+
 
 
 
